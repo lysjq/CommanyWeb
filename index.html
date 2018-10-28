@@ -3,163 +3,442 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Page Title</title>
+    <title>运营研究社</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.bootcss.com/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/index.css">
+
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-inverse navbar-expend-sm" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><b class="text-success" style="margin: auto 20px;">运营研究社</b></a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> 首页 </a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-education"></span>
-                        运营课程 <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">大咖聊</a></li>
-                        <li><a href="#">免费课程</a></li>
-                        <li><a href="#">专区</a></li>
-                        <li><a href="#">精品课</a></li>
-                    </ul>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">运营研究社</a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><span class="plych"></span><i class="fa fa-home"></i> 首页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><i class="fa fa-book"></i> 运营课程</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">大咖聊 </a>
+                        <a class="dropdown-item" href="#">免费课程 </a>
+                        <a class="dropdown-item" href="#">专区 </a>
+                        <a class="dropdown-item" href="#">精品课 </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-bookmark"></i> 精选文章</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-refresh fa-spin"></i> 社区交流</a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-book"></span>
-                        精选文章 <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </li>
-                <li><a href="#"><span class="glyphicon glyphicon-heart"></span> 社区交流</a></li>
-            </ul>
-            <form class="navbar-form navbar-right" role="search">
-                <button class="btn btn-success"><span class="glyphicon glyphicon-cloud-upload"></span> 免费注册</button>
-                <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-user"></span> 登录</button>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-success my-2 my-sm-0 mx-1" type="button"><i class="fa fa-cog fa-spin"></i> 免费注册</button>
+                <button class="btn btn-danger my-2 my-sm-0 mx-1" type="button"><i class="fa fa-hand-o-right"></i> 登录</button>
             </form>
-        </div><!-- /.navbar-collapse -->
+        </div>
     </nav>
     <!-- 滚动条 -->
-    <div id="carousel-id" class="carousel slide" data-ride="carousel">
+    <div id="carouselId" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#carousel-id" data-slide-to="0" class=""></li>
-            <li data-target="#carousel-id" data-slide-to="1" class=""></li>
-            <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselId" data-slide-to="1"></li>
+            <li data-target="#carouselId" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner">
-            <div class="item">
-
-                <div class="container">
-                    <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="./img/sanjieke1.jpg">
-                    <div class="carousel-caption">
-                        <h1>Example headline.</h1>
-                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous"
-                            Glyphicon buttons on the left and right might not load/display properly due to web browser
-                            security rules.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-                    </div>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active" style="background: url(./img/headbg1.jpeg)">
+                <!-- <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" src="./img/14.png" alt="First slide"> -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-1 d-inline-block">运营研究社<h3 class="d-inline-block text-muted">——不让运营人孤寂的成长</h3>
+                        <h3>职业运营人 高级培训课</h3>
+                        <h4>学习知识、拓展思维、判点经验、提示运营专业素质</h4>
+                        <h4>建设个人魅力、打造核心竞争力</h4>
+                        <a class="btn btn-outline-light btn-lg text-warning "><i class="fa fa-refresh fa-spin"></i>
+                            查看详情</a>
+                        <a class="btn btn-outline-dark btn-lg text-light "><i class="fa fa-hand-o-up"></i> 现在报名</a>
                 </div>
             </div>
-            <div class="item">
-                <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="./img/14.png">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                    </div>
+            <div class="carousel-item" style="background: url(./img/headbg3.png)">
+                <!-- <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" src="./img/12.jpg" alt="Second slide"> -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="display-2 d-inline-block">运营研究社<h2 class="d-inline-block text-muted">——不让运营人孤寂的成长</h2>
+                    </h3>
+                    <h3>职业运营人 高级培训课</h3>
+                    <h4>学习知识、拓展思维、判点经验、提示运营专业素质</h4>
+                    <h4>建设个人魅力、打造核心竞争力</h4>
+                    <a class="btn btn-outline-light btn-lg text-warning"><i class="fa fa-refresh fa-spin"></i> 查看详情</a>
+                    <a class="btn btn-outline-dark btn-lg text-light "><i class="fa fa-hand-o-up"></i> 现在报名</a>
                 </div>
             </div>
-            <div class="item active">
-                <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="./img/13.png">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                    </div>
+            <div class="carousel-item" style="background: url(./img/headbg2.png)">
+                <!-- <img data-src="holder.js/900x500/auto/#666:#444/text:Third slide" src="./img/13.png" alt="Third slide"> -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="display-2 d-inline-block">运营研究社<h2 class="d-inline-block text-muted">——不让运营人孤寂的成长</h2>
+                    </h3>
+                    <h3>职业运营人 高级培训课</h3>
+                    <h4>学习知识、拓展思维、判点经验、提示运营专业素质</h4>
+                    <h4>建设个人魅力、打造核心竞争力</h4>
+                    <a class="btn btn-outline-light btn-lg text-warning"><i class="fa fa-refresh fa-spin"></i> 查看详情</a>
+                    <a class="btn btn-outline-dark btn-lg text-light "><i class="fa fa-hand-o-up"></i> 现在报名</a>
                 </div>
             </div>
         </div>
-        <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-        <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-    <div class="container">
+    <div class="container" id="content">
         <!-- 学院进修 -->
-        <div class="row" id="book1">
-            <div class="col-md-4">
-                <div class="thumbnail text-center">
-                    <img data-src="#" alt="" src="./img/12.jpg">
-                    <div class="caption">
-                        <h3>产品运营</h3>
-                        <p>产品运营</p>
-                        <p>
-                            <a href="#" class="btn btn-success" role="button">了解详情</a>
-                            <a href="#" class="btn btn-danger" role="button">火热报名</a>
-                        </p>
+        <div class="row mt-5" id="content-row1">
+            <div class="w-100 text-muted text-center" id="biaoti">
+                <h2 class=""><b>课程 板块</b></h2>
+                <p class="">集萃前沿新知 突破成长瓶颈</p>
+                <p>学习中国前沿运营思想，颠覆传统思维，打造新盈</p>
+            </div>
+            <div class="card-deck text-center">
+                <div class="card">
+                    <img class="card-img-top" src="./img/index_01.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">互联网运营</h4>
+                        <p class="card-text text-muted">运营从整体来说是对一个市场、产品以及领域的掌控，它可大可小，大到整个信息的了解小到只是一个店铺或是一个产品；互联网是针对全球而来的，想要把它运用自如是需要从不同的方方面面入手。</p>
+                    </div>
+                    <div class="card-footer">
+                        <button href="#" class="btn btn-dark"><i class="fa fa-refresh fa-spin"></i> 了解详情</button>
+                        <button href="#" class="btn btn-danger">火热报名</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./img/index_02.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">新媒体运营</h4>
+                        <p class="card-text text-muted">通过现代化移动互联网手段，通过利用微信、微博、贴吧等新兴媒体平台工具进行产品宣传、推广、产品营销的一系列运营手段。通过策划品牌相关的优质、高度传播性的内容和线上活动，向客户广泛或者精准推送消息，提高参与度，提高知名度，从而充分利用粉丝经济，达到相应营销目的。</p>
+                    </div>
+                    <div class="card-footer">
+                        <button href="#" class="btn btn-dark"><i class="fa fa-refresh fa-spin"></i> 了解详情</button>
+                        <button href="#" class="btn btn-danger"><i class="fa fa-hand-o-up"></i> 火热报名</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./img/index_04.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">内容运营</h4>
+                        <p class="card-text text-muted">基于产品的内容进行内容策划、内容创意、内容编辑、内容发布、内容优化、内容营销等,利用付费的、拥有的、赢得的和分享的沟通渠道与顾客一起或在顾客之间创造、激发和分享品牌信息和对话。</p>
+                    </div>
+                    <div class="card-footer">
+                        <button href="#" class="btn btn-dark"><i class="fa fa-refresh fa-spin"></i> 了解详情</button>
+                        <button href="#" class="btn btn-danger"><i class="fa fa-hand-o-up"></i> 火热报名</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="thumbnail text-center">
-                    <img data-src="#" alt="" src="./img/12.jpg">
-                    <div class="caption">
-                        <h3>产品运营</h3>
-                        <p>产品运营</p>
-                        <p>
-                            <a href="#" class="btn btn-success" role="button">了解详情</a>
-                            <a href="#" class="btn btn-danger" role="button">火热报名</a>
-                        </p>
+            <div class="card-deck text-center mt-3">
+                <div class="card">
+                    <img class="card-img-top" src="./img/bg5.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">产品运营</h4>
+                        <p class="card-text text-muted">牛叉的互联网公司背后，是一群牛叉的产品经理,只要你想提升自己的工作能力和效率以及工作的思维模式，那么产品经理课程正是你的职业跳板，相信我，学完之后你的思维能力以及工作能力甚至沟通能力一定会有大幅提升！</p>
+                    </div>
+                    <div class="card-footer">
+                        <button href="#" class="btn btn-dark"><i class="fa fa-refresh fa-spin"></i> 了解详情</button>
+                        <button href="#" class="btn btn-danger"><i class="fa fa-hand-o-up"></i> 火热报名</button>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail text-center">
-                    <img data-src="#" alt="" src="./img/12.jpg">
-                    <div class="caption">
-                        <h3>产品运营</h3>
-                        <p>产品运营</p>
-                        <p>
-                            <a href="#" class="btn btn-success" role="button">了解详情</a>
-                            <a href="#" class="btn btn-danger" role="button">火热报名</a>
-                        </p>
+                <div class="card">
+                    <img class="card-img-top" src="./img/bg6.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">社群运营</h4>
+                        <p class="card-text text-muted">社群其实就是一群人为了相同价值或者类似价值，聚合在一起，为了相互之间的利益互换。社群并不是一个产品，也不是一群人聚在一块就叫做社群。社群对于产品运营的重要性，主要分为四个部分，拉新、活跃、留存和转化</p>
+                    </div>
+                    <div class="card-footer">
+                        <button href="#" class="btn btn-dark"><i class="fa fa-refresh fa-spin"></i> 了解详情</button>
+                        <button href="#" class="btn btn-danger"><i class="fa fa-hand-o-up"></i> 火热报名</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./img/bg7.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">活动运营</h4>
+                        <p class="card-text">小到一次线下活动，大到搭建一个企业增长体系，推进企业的整体数字化转型的各种场景，你都可以立即开始尝试，迅速验证效果，不断迭代策略，小步快跑不断增长。</p>
+                    </div>
+                    <div class="card-footer">
+                        <button href="#" class="btn btn-dark"><i class="fa fa-refresh fa-spin"></i> 了解详情</button>
+                        <button href="#" class="btn btn-danger"><i class="fa fa-hand-o-up"></i> 火热报名</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- 精选文章 -->
+    <div class="container-fluid mt-5 pt-5 pb-1 bg-light text-center text-muted">
+        <h2 class=""><b>精选文章</b></h2>
+        <p>实用干货，精选运营技巧，玩出“套路”，助力提升运营技巧</p>
+        <div class="card-deck">
+            <div class="card">
+                <a href="https://36kr.com/p/5156261.html" target="_blank" class="text-muted">
+                    <div class="card-header">
+                        <h4 class="card-title">支付宝锦鲤营销背后，有4个精心策划的内幕</h4>
+                    </div>
+                    <img class="card-img" src="./img/c1.jpg" alt="">
+                </a>
+                <div class="card-body">
+                    <p class="card-text">许多小伙伴是在抽奖结果出来之后才知道这次活动，还觉得玩法简直太创新了。但实际上，这并不是一次支付宝创新的活动，甚至阿里自己都玩过，却唯有这次火到了微博之外。......</p>
+                </div>
+                <button class="btn btn-primary pull-right m-4"><i class="fa fa-thumbs-up"></i>
+                    赞 <span class="badge badge-light">145896</span>
+                </button>
+            </div>
+            <div class="card">
+                <a href="https://36kr.com/p/5157769.html" target="_blank" class="text-muted">
+                    <div class="card-header">
+                        <h4 class="card-title">从0打造亿级营收，靠社群如何做到？</h4>
+                    </div>
+                    <img class="card-img" src="./img/c2.jpg" alt="">
+                </a>
+                <div class="card-body">
+                    <p class="card-text">很多人问我，怎么样从运营变到商业运营？通俗一点解释，如何从以前不赚钱的运营到现在做营收的运营？让社群活跃从一个数字拥有两个价值？活跃意味着什么......</p>
+                </div>
+                <button class="btn btn-primary pull-right m-4"><i class="fa fa-thumbs-up"></i>
+                    赞 <span class="badge badge-light">145896</span>
+                </button>
+            </div>
+            <div class="card">
+                <a href="https://36kr.com/p/5157377.html" target="_blank" class="text-muted">
+                    <div class="card-header">
+                        <h4 class="card-title">社群运营的终极思维：向钱看</h4>
+                    </div>
+                    <img class="card-img" src="./img/c3.jpg" alt="">
+                </a>
+                <div class="card-body">
+                    <p class="card-text">我这边结合自己2年多来社群创业实践（社群项目估值7000万），聊聊社群商业，也算是对咱们峰会上午场分享的提炼和总结，可能你会发现有很多地方你不谋而合......</p>
+                </div>
+                <button class="btn btn-primary pull-right m-4"><i class="fa fa-thumbs-up"></i>
+                    赞 <span class="badge badge-light">145896</span>
+                </button>
+            </div>
+            <div class="card">
+                <a href="https://36kr.com/p/5156719.html" target="_blank" class="text-muted">
+                    <div class="card-header">
+                        <h4 class="card-title">双十一歧视“穷人”，背后是用户画像在搞鬼</h4>
+                    </div>
+                    <img class="card-img" src="./img/c4.jpg" alt="">
+                </a>
+                <div class="card-body">
+                    <p class="card-text">双十一快到了，很多小伙伴表示自己的双手已经准备好了。但是据我所知，有一群人双十一不仅不用剁手，还能赚钱......</p>
+                </div>
+                <button class="btn btn-primary pull-right m-4"><i class="fa fa-thumbs-up"></i>
+                    赞 <span class="badge badge-light">145896</span>
+                </button>
+            </div>
+            <div class="card">
+                <a href="https://36kr.com/p/5147035.html" target="_blank" class="text-muted">
+                    <div class="card-header">
+                        <h4 class="card-title">工作3年我最后悔的是，没搞懂什么是「用户思维</h4>
+                    </div>
+                    <img class="card-img" src="./img/c5.jpg" alt="">
+                </a>
+                <div class="card-body">
+                    <p class="card-text">刚来运营社的时候，我写文章有个毛病，特别容易自嗨。按照行话说，是因为我缺乏一种运营必备的思维——用户思维，并且差点因此被老板开除。......</p>
+                </div>
+                <button class="btn btn-primary pull-right m-4"><i class="fa fa-thumbs-up"></i>
+                    赞 <span class="badge badge-light">145896</span>
+                </button>
+            </div>
+        </div>
+        <div class="card-deck mt-5">
+            <div class="card">
+                <a href="https://36kr.com/p/5153129.html" target="_blank" class="text-muted">
+                    <div class="card-header">
+                        <h4 class="card-title">比iPhoneXS价格更吓人的，是它背后的销售套路</h4>
+                    </div>
+                    <img class="card-img" src="./img/c6.jpg" alt="">
+                </a>
+                <div class="card-body">
+                    <p class="card-text">苹果不知道我们消费降级了吗？为什么还越卖越贵？卖这么贵真的不担心用户会改投奔安卓吗？我很好奇，苹果这波到底是什么操作？......</p>
+                </div>
+                <button class="btn btn-primary pull-right m-4"><i class="fa fa-thumbs-up"></i>
+                    赞 <span class="badge badge-light">145896</span>
+                </button>
+            </div>
+            <div class="card">
+                <a href="https://36kr.com/p/5151004.html" target="_blank" class="text-muted">
+                    <div class="card-header">
+                        <h4 class="card-title">连续7天霸占App榜首的“子弹短信”，为什么我并不看好</h4>
+                    </div>
+                    <img class="card-img" src="./img/c7.jpg" alt="">
+                </a>
+                <div class="card-body">
+                    <p class="card-text">一番热闹过后，许多网友“倒戈”了，扬言子弹短信将撼动微信的霸主地位。但要我说，这很可能就是一次事件而已，等好奇心消失了，大家也就散了......</p>
+                </div>
+                <button class="btn btn-primary pull-right m-4"><i class="fa fa-thumbs-up"></i>
+                    赞 <span class="badge badge-light">145896</span>
+                </button>
+            </div>
+            <div class="card">
+                <a href="https://36kr.com/p/5149900.html" target="_blank" class="text-muted">
+                    <div class="card-header">
+                        <h4 class="card-title">“富察皇后”下线后去哪儿了？扒扒小红书的KOL运营策略</h4>
+                    </div>
+                    <img class="card-img" src="./img/c8.jpg" alt="">
+                </a>
+                <div class="card-body">
+                    <p class="card-text">听说《延禧攻略》里的皇后娘娘“死”后，去了小红书……目前小红书已被延禧攻略剧组攻占，除了皇后娘娘，令妃和纯妃也都在里边玩耍。......</p>
+                </div>
+                <button class="btn btn-primary pull-right m-4"><i class="fa fa-thumbs-up"></i>
+                    赞 <span class="badge badge-light">145896</span>
+                </button>
+            </div>
+            <div class="card">
+                <a href="https://36kr.com/p/5149300.html" target="_blank" class="text-muted">
+                    <div class="card-header">
+                        <h4 class="card-title">马云推出“割韭菜”新玩法，你被阿里88VIP套路了吗</h4>
+                    </div>
+                    <img class="card-img" src="./img/c9.jpg" alt="">
+                </a>
+                <div class="card-body">
+                    <p class="card-text">多平台都会推出会员，来培养自己的忠实用户，但马爸爸这次很心机。下面小编就带大家扒一扒阿里 88VIP 的两大套路......</p>
+                </div>
+                <button class="btn btn-primary pull-right m-4"><i class="fa fa-thumbs-up"></i>
+                    赞 <span class="badge badge-light">145896</span>
+                </button>
+            </div>
+            <div class="card">
+                <a href="https://36kr.com/p/5147622.html" target="_blank" class="text-muted">
+                    <div class="card-header">
+                        <h4 class="card-title">麦当劳周年促销，价格歧视背后都是套路</h4>
+                    </div>
+                    <img class="card-img" src="./img/c10.jpg" alt="">
+                </a>
+                <div class="card-body">
+                    <p class="card-text">近日，麦当劳声称，为庆祝“金拱门”一周年，自 8 月 8 日起，针对会员开展连续 28 天（至 9 月 4
+                        日）的超值优惠活动，每日推出一款特价单品......</p>
+                </div>
+                <button class="btn btn-primary pull-right m-4"><i class="fa fa-thumbs-up"></i>
+                    赞 <span class="badge badge-light">145896</span>
+                </button>
+            </div>
+        </div>
+        <nav aria-label="Page navigation" class="m-5">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item"><a class="page-link" href="#">......</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">更多精选文章、实用干货，敬请关注运营研究社！</h4>
+            <p></p>
+            <p class="mb-0"></p>
+        </div>
+    </div>
+    <!-- 关于我们 -->
+    <div class="jumbotron">
+        <h1 class="display-3">运营研究社</h1>
+        <h1>——不让运营人孤寂的成长</h1>
+        <div class="progress">
+            <div id="progess1" class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
+                style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25-运营研究社ing...</div>
+        </div>
+        <p class="lead">关于我们</p>
+        <hr class="my-2">
+        <p>我们致力于“不让运营人孤寂地成长”，是一家互联网运营结构化学习社群，围绕内容运营、活动策划、社群运营、用户运营进行每周一次的分享讨论，并为社员提供随时随地的互动答疑服务。出版畅销书《跟小贤学运营》，Ta说特邀作者、入驻36氪、PMCAFF等平台专栏；持续输出好读有用的运营干货，全网阅读量超千万！</p>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action">2016年2月 运营社营社内测，服务团队雏形</li>
+            <li class="list-group-item list-group-item-action">2016年3月 1.0版本发布，招募100位社员</li>
+            <li class="list-group-item list-group-item-action">2016年4月 1.1版本发布，200个名额1h抢光</li>
+            <li class="list-group-item list-group-item-action">2016年5月 1.2版本发布，话题讨论+专题分享模式成型</li>
+            <li class="list-group-item list-group-item-action">2016年6月 1.3版本发布，开启收费模式</li>
+            <li class="list-group-item list-group-item-action">2016年7月 上线运营社周边与在线社区</li>
+            <li class="list-group-item list-group-item-action">2016年9月 《零基础进入BAT》课程，覆盖人数20万</li>
+            <li class="list-group-item list-group-item-action">2016年11月 入驻36氪，打造互联网运营媒体矩阵</li>
+            <li class="list-group-item list-group-item-action">2016年12月 举办第一届运营人年终聚会[2]</li>
+            <li class="list-group-item list-group-item-action">2017年1月 出版图书《跟小贤学运营》并销量过万</li>
+            <li class="list-group-item list-group-item-action">2017年2月 运营研究社1周年，5城运营同庆</li>
+            <li class="list-group-item list-group-item-action">2017年4月 完成百万人民币的种子轮融资</li>
+            <li class="list-group-item list-group-item-action">2017年7月 致敬运营人发布会，打造互联网运营文化发源地[3]</li>
+            <li class="list-group-item list-group-item-action">......!!!</li>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success">未来，我们继续努力......</a>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Fighting!!!</a>
+            </p>
+    </div>
+    <!-- coopright -->
+    <div class="container-fluid bg-dark mt-5 text-white">
+        <div class="container">
+            <h4><i class="fa fa-list-alt"></i> 课程中心</h4>
+            <ul id="center1" class="d-flex justify-content-around">
+                <li><i class="fa fa-arrow-right pl-3"></i>互联网运营</li>
+                <li><i class="fa fa-arrow-right pl-3"></i>新媒体运营</li>
+                <li><i class="fa fa-arrow-right pl-3"></i>内容运营</li>
+                <li><i class="fa fa-arrow-right pl-3"></i>产品运营</li>
+                <li><i class="fa fa-arrow-right pl-3"></i>社群运营</li>
+                <li><i class="fa fa-arrow-right pl-3"></i>活动运营</li>
+                <li><i class="fa fa-arrow-right pl-3"></i>区块链</li>
+            </ul>
+            <h4>联系我们</h4>
+            <form action="" class="">
+                <div class="form-group row">
+                    <label for="name3" class="col-2 col-form-label"><i class="fa fa-user"></i> 姓名</label>
+                    <div class="col-10">
+                        <input type="email" class="form-control border-success" id="name3" placeholder="请输入姓名">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="phone3" class="col-2 col-form-label"><i class="fa fa-phone"></i> 手机号</label>
+                    <div class="col-10">
+                        <input type="email" class="form-control border-success" id="phone3" placeholder="手机号">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email3" class="col-2 col-form-label"><i class="fa fa-envelope"></i> 邮箱</label>
+                    <div class="col-10">
+                        <input type="email" class="form-control border-success" id="email3" placeholder="@">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="" class="col-2 col-form-label"> 意见</label>
+                    <textarea class="form-control col-10" name="" id="" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-telegram"></i> 提交</button>
+            </form>
+        </div>
+    </div>
 
-    <!-- 火热课程 -->
-
-    <!-- 限时免费 -->
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-    <script src="./node_modules/wowjs/dist/wow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./src//wow.min.js"></script>
     <script src="./build/index.js"></script>
 </body>
 
